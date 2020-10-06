@@ -4,7 +4,6 @@ Created on Tue Oct  6 17:55:53 2020
 
 @author: Resham Sundar
 """
-
 from __future__ import division, print_function
 # coding=utf-8
 import sys
@@ -26,6 +25,7 @@ from gevent.pywsgi import WSGIServer
 
 MODEL_PATH = 'model.weights.best3.hdf5'
 model = load_model(MODEL_PATH)
+cwd = os.getcwd()
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploaded'
@@ -37,7 +37,7 @@ def upload_f():
 def finds(): 
     test_datagen = ImageDataGenerator(rescale = 1./255) 
     vals = ['Brown Leaf Spot', 'Brown Plant Hopper' ,'False Smut'] # change this according to what you've trained your model to do 
-    test_dir = 'D:\\My Documents\\Internship\\REVA_Nest\\Demo Model 1\\Deployment'
+    test_dir = cwd
     test_generator = test_datagen.flow_from_directory( 
             test_dir, 
             target_size =(224, 224), 
@@ -48,7 +48,7 @@ def finds():
   
     pred = model.predict_generator(test_generator) 
     print(pred) 
-    return str(vals[np.argmax(pred)]) 
+    return str(vals[np.argmax(pred)])
   
 @app.route('/uploader', methods = ['GET', 'POST']) 
 def upload_file(): 
@@ -59,4 +59,4 @@ def upload_file():
         return render_template('pred.html', ss = val)
     
 if __name__ == '__main__': 
-    app.run() 
+    app.run()
