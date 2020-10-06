@@ -1,4 +1,3 @@
-absl-py @ file:///C:/ci/absl-py_1600290345082/work
 argon2-cffi==20.1.0
 astor==0.8.1
 astunparse==1.6.3
@@ -8,13 +7,10 @@ backcall==0.2.0
 bleach==3.2.1
 blinker==1.4
 brotlipy==0.7.0
-cachetools @ file:///tmp/build/80754af9/cachetools_1596822027882/work
 certifi==2020.6.20
-cffi @ file:///C:/ci/cffi_1600699250966/work
 chardet==3.0.4
 click==7.1.2
 colorama==0.4.3
-cryptography @ file:///C:/ci/cryptography_1601046913206/work
 cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
@@ -22,14 +18,10 @@ entrypoints==0.3
 Flask==1.1.2
 gast==0.3.3
 gevent==20.9.0
-google-auth @ file:///tmp/build/80754af9/google-auth_1600960338579/work
 google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
 greenlet==0.4.17
-grpcio @ file:///C:/ci/grpcio_1597406403308/work
 h5py==2.10.0
-idna @ file:///tmp/build/80754af9/idna_1593446292537/work
-importlib-metadata @ file:///C:/ci/importlib-metadata_1593446525189/work
 ipykernel==5.3.4
 ipython==7.18.1
 ipython-genutils==0.2.0
@@ -45,10 +37,8 @@ jupyter-console==6.2.0
 jupyter-core==4.6.3
 jupyterlab-pygments==0.1.1
 Keras==2.4.3
-Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
 Keras-Preprocessing==1.1.2
 kiwisolver==1.2.0
-Markdown @ file:///C:/ci/markdown_1597415185889/work
 MarkupSafe==1.1.1
 matplotlib==3.3.2
 mistune==0.8.4
@@ -74,14 +64,11 @@ prompt-toolkit==3.0.7
 protobuf==3.13.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 Pygments==2.7.1
 PyJWT==1.7.1
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
 pyparsing==2.4.7
 pyreadline==2.1
 pyrsistent==0.17.3
-PySocks @ file:///C:/ci/pysocks_1594394709107/work
 python-dateutil==2.8.1
 pytz==2020.1
 pywin32==228
@@ -90,11 +77,8 @@ PyYAML==5.3.1
 pyzmq==19.0.2
 qtconsole==4.7.7
 QtPy==1.9.0
-requests @ file:///tmp/build/80754af9/requests_1592841827918/work
 requests-oauthlib==1.3.0
-rsa @ file:///tmp/build/80754af9/rsa_1596998415516/work
 scikit-learn==0.23.2
-scipy @ file:///C:/ci/scipy_1597686737426/work
 Send2Trash==1.5.0
 six==1.15.0
 tensorboard==2.3.0
@@ -109,7 +93,6 @@ testpath==0.4.4
 threadpoolctl==2.1.0
 tornado==6.0.4
 traitlets==5.0.4
-urllib3 @ file:///tmp/build/80754af9/urllib3_1597086586889/work
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==0.16.1
