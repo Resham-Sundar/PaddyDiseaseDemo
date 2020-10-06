@@ -28,7 +28,7 @@ MODEL_PATH = 'model.weights.best3.hdf5'
 model = load_model(MODEL_PATH)
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploaded//image'
+app.config['UPLOAD_FOLDER'] = 'uploaded'
 
 @app.route('/') 
 def upload_f(): 
@@ -37,7 +37,7 @@ def upload_f():
 def finds(): 
     test_datagen = ImageDataGenerator(rescale = 1./255) 
     vals = ['Brown Leaf Spot', 'Brown Plant Hopper' ,'False Smut'] # change this according to what you've trained your model to do 
-    test_dir = 'uploaded'
+    test_dir = 'D:\\My Documents\\Internship\\REVA_Nest\\Demo Model 1\\Deployment'
     test_generator = test_datagen.flow_from_directory( 
             test_dir, 
             target_size =(224, 224), 
