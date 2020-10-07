@@ -11,3 +11,4 @@ pandas==1.1.2
 scikit-learn==0.23.2
 Werkzeug==0.16.1
 tensorflow>=2.2.0
+gevent==20.9.0
