@@ -49,13 +49,19 @@ def finds():
     pred = model.predict_generator(test_generator) 
     print(pred) 
     return str(vals[np.argmax(pred)])
-  
+
+def removeAll():
+    files = glob.glob('uploaded/*')
+    for f in files:
+        os.remove(f)
+
 @app.route('/uploader', methods = ['GET', 'POST']) 
 def upload_file(): 
     if request.method == 'POST': 
         f = request.files['file'] 
         f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename))) 
         val = finds() 
+        removeAll()
         return render_template('pred.html', ss = val)
     
 if __name__ == '__main__': 
